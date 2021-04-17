@@ -7,10 +7,7 @@ public class Player : MonoBehaviour
 
     public static GameObject PL;
     private Rigidbody2D _body2d;
-
-    [SerializeField]
-    private int lives = 10;
-
+    public static int lives = 10;
     public int Lives
     {
         get { return lives; }
@@ -31,5 +28,19 @@ public class Player : MonoBehaviour
         _body2d = GetComponent<Rigidbody2D>();
         PL = this.gameObject;
     }
+
+    // void OnTriggerStay2D(Collider2D collider)
+    //{
+    //    if (t > InvTime)
+    //    {
+    //        t = 0.0f;
+    //        if (collider.tag == "Enemy")
+    //        {
+    //            Player.lives -= 1;
+    //            l -= 1;            
+    //        }
+    //    }
+    //    t += Time.deltaTime;
+    //}
 
 }
