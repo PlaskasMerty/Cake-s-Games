@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Spawn : MonoBehaviour
 {
@@ -28,5 +29,15 @@ public class Spawn : MonoBehaviour
         }
     }
 
+    void Update()
+    {
+        if (i == KOLVO)
+        {
+            if (GameObject.FindGameObjectsWithTag("Enemy").Length == 0)
+            {
+                SceneManager.LoadScene("MainMenu");
+            }
+        }
+    }
 
 }

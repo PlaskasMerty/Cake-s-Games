@@ -31,6 +31,10 @@ public class ButtonManager : MonoBehaviour
         }
     }
 
+    public void ExitMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
     public void Exit()
     {
         Application.Quit();

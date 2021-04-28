@@ -21,7 +21,7 @@ public class Enemy : MonoBehaviour
             t = 0.0f;
             if (collider.tag == "Player")
             {
-                Player.lives -= 1;
+                Player.Lives--;
             }
         }
         t += Time.deltaTime;
