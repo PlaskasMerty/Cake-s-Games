@@ -40,6 +40,5 @@ public class Player : MonoBehaviour
         Time.timeScale = 1;
         _body2d = GetComponent<Rigidbody2D>();
         PL = this.gameObject;
-        lives = 5;
     }
 }

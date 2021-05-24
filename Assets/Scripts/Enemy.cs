@@ -7,6 +7,8 @@ public class Enemy : MonoBehaviour
     public static Rigidbody2D rb;
     public static float InvTime = 3.0f;
     public static float t = 0.0f;
+    public GameObject PF;
+    public GameObject time;
   
     void FixedUpdate()
     {
@@ -21,6 +23,8 @@ public class Enemy : MonoBehaviour
             t = 0.0f;
             if (collider.tag == "Player")
             {
+                time = Instantiate(PF, this.transform.position, Quaternion.identity,this.transform);
+                Destroy(time, 0.1f);
                 Player.Lives--;
             }
         }

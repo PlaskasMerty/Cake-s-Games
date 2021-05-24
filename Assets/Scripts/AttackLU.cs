@@ -18,6 +18,9 @@ public class AttackLU : MonoBehaviour
         if (Yes)
         {
             En.SetActive(false);
+            ButtonManager.S[3].pitch = Random.Range(0.1f,1f);
+            ButtonManager.S[3].Play();
+            ButtonManager.AddScore();
             //Destroy(En);
             Yes = false;
         }

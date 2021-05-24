@@ -118,6 +118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 698902b408f85f34fb1fb178f9bcd30f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PF: {fileID: 9139360875193669657, guid: e490778a671523e4e9272ab76643dd19, type: 3}
 --- !u!50 &2696463924499018805
 Rigidbody2D:
   serializedVersion: 4
@@ -164,13 +165,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7827798297420465994}
-  m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 2696463924499018810}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 270}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -0.29999757, y: -0.29999757}
@@ -203,7 +204,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9938f885096fc8d41bd1a4471ee978fc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7ffd4f16a73201e47ac53bee7dd74dc2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
